@@ -1,3 +1,5 @@
+### Python
+```python
 from ultralytics import YOLO
 
 model_path = r"yolov8n_CRA_BDA_SMA.yaml"
