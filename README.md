@@ -24,3 +24,9 @@ data = 'dataset_example/my_dataset.yaml'
 if __name__ == '__main__':
     model.val(data=data, split="test",name="test",batch=1, device=0,plots=False)
 ```
+
+## Acknowledgement
+
+The code base is built with [ultralytics](https://github.com/ultralytics/ultralytics) and [Swin-Transformer](https://github.com/microsoft/Swin-Transformer).
+
+Thanks for the great implementations! 
