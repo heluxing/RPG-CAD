@@ -1,0 +1,17 @@
+path: your_root_path/dataset_example
+train: images/train_6
+val: images/val_6
+test: images/test
+names:
+  0: category0
+  1: category1
+  2: category2
+  3: category3
+  4: category4
+  5: category5
+  6: category6
+  7: category7
+  8: category8
+  9: category9
+  10: category10
+  11: category11
