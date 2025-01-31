@@ -9,7 +9,7 @@ name = "yolov8n_CRA_BDA_SMA"
 path = project + "/" + name
 if __name__ == '__main__':
     # #s
-    results = model.train(data=data, project=project, name=name, imgsz=512, batch=2,
+    results = model.train(data=data, project=project, name=name, imgsz=512, batch=32,
                           epochs=200, patience=100,
                           pretrained=False, save_period=5,device=[0,1], resume=True)  # #
 
