@@ -1,7 +1,7 @@
 
 from ultralytics import YOLO
 
-model_path = r"yolov8n.yaml"
+model_path = r"yolov8n_CRA_BDA_SMA.yaml"
 model = YOLO(model_path)
 data = r"dataset_example/my_dataset.yaml"
 project = "Craniocerebral_Multi-Abnormality_Detection"
