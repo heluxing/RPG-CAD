@@ -1,0 +1,21 @@
+path: /home/HELUXING/Brain_project/data/dataset_total_8cls
+train: images/train
+val: images/val
+test: images/test
+# ["脑缺血", "颅骨骨折", "脑出血", "软化灶", "A-脑白质疏松", "头皮血肿", "占位", "脑外积液", "中线移位", "颅骨病变", "脑萎缩-病理性", "钙化灶-病理性"]
+names:
+  0: naoquexue
+  1: luguguzhe
+  2: naochuxie
+  3: ruanhuazao
+  4: A-naobaizhishusong
+  5: toupixiezhong
+  6: zhanwei
+  7: naowaijiye
+  8: zhongxianyiwei
+  9: lugubingbian
+  10: naoweisuo
+  11: gaihuazao
+download:
+
+

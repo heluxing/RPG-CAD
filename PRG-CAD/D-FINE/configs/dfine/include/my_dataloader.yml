@@ -1,0 +1,16 @@
+
+train_dataloader:
+  shuffle: True
+  total_batch_size: 24 # 这里的设置不起作用，会被dfine_hgnetv2_n_coco.yml中的设置替代
+  num_workers: 8
+
+
+val_dataloader:
+  dataset:
+    transforms:
+      ops:
+        - {type: Resize, size: [512, 512], }
+        - {type: ConvertPILImage, dtype: 'float32', scale: True}
+  shuffle: False
+  total_batch_size: 1 # 这里的设置不起作用，会被dfine_hgnetv2_n_coco.yml中的设置替代
+  num_workers: 8

@@ -1,0 +1,38 @@
+task: detection
+
+evaluator:
+  type: CocoEvaluator
+  iou_types: ['bbox', ]
+
+num_classes: 8
+remap_mscoco_category: True
+
+train_dataloader:
+  type: DataLoader
+  dataset:
+    type: MyDataset
+    img_path: /sequence_dataset-path/images/train_6
+    augment: True
+  shuffle: True
+  num_workers: 8
+  drop_last: True
+  collate_fn:
+    type: collate_fn_DFINE
+
+
+val_dataloader:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: /sequence_dataset-path/images/val_6/
+    ann_file: /sequence_dataset-path/Annotatioins/val_6.json
+    return_masks: False
+    transforms:
+      type: Compose
+      ops: ~
+  shuffle: False
+  num_workers: 0
+  drop_last: False
+  collate_fn:
+    type: BatchImageCollateFunction
+
